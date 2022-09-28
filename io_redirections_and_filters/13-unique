@@ -1,0 +1,2 @@
+#!/bin/bash
+head -q -n 1 list | tr -s ' ' '\n' | sort -u | (tee >(wc -l))
